@@ -79,3 +79,45 @@
     </footer>
 </body>
 </html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main section {
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+}
