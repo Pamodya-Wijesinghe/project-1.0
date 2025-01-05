@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bliss | Gallery</title>
+    <link rel="stylesheet" href="styles common.css">
+    <link rel="stylesheet" href="styles gallery.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Bliss</h1>
+        <nav>
+            <ul>
+		<li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="rooms & rates.html">Rooms & Rates</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a class="active" href="#">Gallery</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+   <main>
+            <h2>Gallery</h2>
+            <img src="hotel lobby.jpg" alt="Hotel lobby" class="image1">
+            <img src="swimming pool.jpg" alt="Swimming pool" class="image2">
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hotel Bliss. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
