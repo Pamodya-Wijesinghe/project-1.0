@@ -1,0 +1,64 @@
+body {
+    background-image :url('image background.webp');
+    background-repeat:no repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size: cover;  
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: rgb(11, 82, 8);
+    color: white;
+    padding: 1.0rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main section {
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    text-align: center;
+    background: rgb(11, 82, 8);
+    color: white;
+    padding: 10;
+}
+li a{
+    padding: 10px;
+    color: azure;
+    text-decoration: none;
+
+}
+.active{
+    background-color: rgb(34, 20, 200);
+}
+li a:hover{
+    background-color: black;
+}
+
