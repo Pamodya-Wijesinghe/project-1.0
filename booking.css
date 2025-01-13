@@ -1,57 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Add your custom styles -->
-</head>
-<body>
-    <header>
-        <h1>Book Your Appointment</h1>
-        <p>Fill in the details to book your appointment</p>
-    </header>
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
-    <main>
-        <form action="submit_booking.php" method="POST">
-            <div>
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
-            <div>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
 
-            <div>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
 
-            <div>
-                <label for="date">Preferred Date:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
+/* Form container */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-            <div>
-                <label for="time">Preferred Time:</label>
-                <input type="time" id="time" name="time" required>
-            </div>
+/* Form elements */
+form div {
+    margin-bottom: 15px;
+}
 
-            <div>
-                <label for="message">Additional Information:</label>
-                <textarea id="message" name="message"></textarea>
-            </div>
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
 
-            <div>
-                <button type="submit">Book Appointment</button>
-            </div>
-        </form>
-    </main>
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
 
-    <footer>
-        <p>&copy; 2025 Your Company. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
