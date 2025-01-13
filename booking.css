@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your custom styles -->
+</head>
+<body>
+    <header>
+        <h1>Book Your Appointment</h1>
+        <p>Fill in the details to book your appointment</p>
+    </header>
+
+    <main>
+        <form action="submit_booking.php" method="POST">
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div>
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div>
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div>
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Book Appointment</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
