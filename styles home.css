@@ -1,12 +1,18 @@
 .container1 {
-            margin: 0;
-            margin-left: 0; /* Align to the left side */
-            width: 20%;
-	    line-height: 1.7;
-	    font-size: 20px;
-	    color:green;
-	    margin-left: 0%;
-	    padding-left: 1%;
-	    padding-right: 1%;
-	    background-color: transparent;
-        }
+    margin: 0;
+    width: 25%; 
+    line-height: 1.7;
+    font-size: 20px;
+    color: green;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: transparent;
+    box-sizing: border-box; 
+}
+
+@media screen and (max-width: 768px) {
+    .container1 {
+        width: 90%; 
+        font-size: 18px; 
+    }
+}
