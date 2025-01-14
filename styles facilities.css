@@ -46,21 +46,27 @@ main h2 {
     margin-bottom: 1.5rem;
 }
 
-.facility {
-    margin: 1.5rem 0;
+/* Facility Grid */
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
 }
 
-.facility img {
-    width: 300px;
+.facility-item {
+    text-align: center;
+}
+
+.facility-item img {
+    width: 100%;
     height: 200px;
     object-fit: cover;
-    display: block;
-    margin: 0 auto;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.facility p {
+.facility-item p {
     margin-top: 0.5rem;
     font-size: 1.2rem;
     color: #555;
@@ -73,4 +79,9 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
+footer p {
+    margin: 0;
+}
+
 
