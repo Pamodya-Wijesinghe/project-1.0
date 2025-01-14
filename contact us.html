@@ -6,13 +6,112 @@
     <title>Hotel Aventura | Contact Us</title>
     <link rel="stylesheet" href="styles common.css">
     <link rel="stylesheet" href="styles contact us.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            text-align: left;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Hotel Aventura</h1>
         <nav>
             <ul>
-		<li><a href="home.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="about us.html">About Us</a></li>
                 <li><a href="rooms & rates.html">Rooms & Rates</a></li>
                 <li><a href="facilities.html">Facilities</a></li>
@@ -21,21 +120,30 @@
             </ul>
         </nav>
     </header>
-   <main>
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+    <main>
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Please fill out the form below or use the contact details provided to get in touch with us.</p>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-                <button type="submit">Submit</button>
-            </form>
-       
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Contact Details</h3>
+            <p><strong>Address:</strong> 123 Paradise Lane, Beach City</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Email:</strong> contact@hotelaventura.com</p>
+        </div>
     </main>
 
     <footer>
