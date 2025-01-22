@@ -6,6 +6,8 @@
     <title>Hotel Aventura | Contact Us</title>
     <link rel="stylesheet" href="styles common.css">
     <link rel="stylesheet" href="styles contact us.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -26,7 +28,7 @@
         <p>If you have any inquiries, feedback, or questions, feel free to reach out to us using the form below. Our team will get back to you as soon as possible.</p>
         <div class="contact-container">
             <div class="contact-form">
-                <form>
+                <form id="contact-form">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
@@ -46,9 +48,9 @@
                 <p>Phone: 0112879603</p>
                 <p>Follow us:</p>
                 <ul class="social-media">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#" class="fab fa-facebook-f"></a></li>
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
                 </ul>
             </div>
         </div>
@@ -56,6 +58,19 @@
     <footer>
         <p>&copy; 2025 Hotel Aventura. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Optional JavaScript for form validation (if needed)
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            if (!name || !email || !message) {
+                alert("Please fill out all fields.");
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
-
