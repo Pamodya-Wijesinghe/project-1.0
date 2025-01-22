@@ -1,49 +1,63 @@
+/* styles rooms-rates.css */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #2c3e50;
+    background-color: #003d33;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
+    font-weight: 500;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #005a47;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav ul li a.active {
-    font-weight: bold;
+    background: #f4a261;
+    color: #000;
 }
 
 main {
     padding: 20px;
     max-width: 1000px;
-    margin: auto;
+    margin: 80px auto 20px;
 }
 
 h2 {
     text-align: center;
-    color: #2c3e50;
+    color: #003d33;
+    font-weight: 700;
 }
 
 .room-details p {
@@ -57,35 +71,52 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 12px;
+table th, table td {
+    padding: 12px 15px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-th {
-    background-color: #2c3e50;
+table th {
+    background-color: #003d33;
     color: white;
 }
 
-tr:nth-child(even) {
+table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-tr:hover {
+table tr:hover {
     background-color: #f1f1f1;
 }
 
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003d33;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #005a47;
+}
+
 footer {
-    background-color: #2c3e50;
+    background-color: #003d33;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
