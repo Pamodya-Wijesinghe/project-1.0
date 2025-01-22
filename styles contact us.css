@@ -1,5 +1,7 @@
+/* styles contact us.css */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -7,9 +9,9 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+    background-color: #003d33;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -37,17 +39,19 @@ nav ul li a {
     display: inline-block;
 }
 
-nav ul li a.active, nav ul li a:hover {
-    background-color: #008cba;
+nav ul li a.active, 
+nav ul li a:hover {
+    background-color: #f4a261;
     border-radius: 5px;
 }
 
 main {
-    padding: 2rem;
+    padding: 100px 20px 20px; /* Adjust for sticky header */
+    text-align: center;
 }
 
 h2 {
-    color: #008cba;
+    color: #003d33;
     text-align: center;
 }
 
@@ -82,17 +86,18 @@ h2 {
 }
 
 .contact-form button {
-    background-color: #008cba;
+    background-color: #f4a261;
     color: #fff;
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #005f87;
+    background-color: #d85f20;
 }
 
 .contact-details h3 {
@@ -105,7 +110,7 @@ h2 {
 }
 
 .contact-details a {
-    color: #008cba;
+    color: #f4a261;
     text-decoration: none;
 }
 
@@ -119,11 +124,32 @@ h2 {
     margin-right: 10px;
 }
 
+.contact-details ul li a {
+    font-size: 1.5rem;
+    color: #003d33;
+}
+
+.contact-details ul li a:hover {
+    color: #f4a261;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
-    color: #fff;
+    background-color: #003d33;
+    color: white;
     margin-top: 2rem;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-details {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
