@@ -114,11 +114,7 @@ footer {
     color: #ffffff;
 }
 
-.social-media img {
-    width: 30px;
-    margin: 0 5px;
-    vertical-align: middle;
-}
+
 
 @media screen and (max-width: 768px) {
     .image-grid {
