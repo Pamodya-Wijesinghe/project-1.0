@@ -15,6 +15,7 @@ header {
     padding: 1rem 0;
     position: fixed;
     top: 0;
+    
     width: 100%;
     z-index: 1000;
 }
@@ -26,8 +27,8 @@ header h1 {
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 10;
+    margin: 10;
     display: flex;
     justify-content: center;
     background-color: #005a47;
@@ -37,6 +38,10 @@ nav ul li {
     margin: 0 10px;
 }
 
+nav{
+    
+    margin: 2px;
+}
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -52,9 +57,14 @@ nav ul li a:hover, .active {
 
 
 main {
-    padding: 100px 20px 20px; /* Adjust for sticky header */
+    padding: 50px; /* Adjust for sticky header */
     text-align: center;
+    padding: 50px;
+    max-width: 1000px;
+    margin: 70px auto 10px;
 }
+
+
 
 main h2 {
     font-size: 2rem;
@@ -116,4 +126,16 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color:white ;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    color: #003d33;
+    font-weight: 700;
 }

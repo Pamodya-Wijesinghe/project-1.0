@@ -33,6 +33,7 @@ nav ul {
     background-color: #005a47;
 }
 
+
 nav ul li {
     margin: 0 10px;
 }
@@ -40,7 +41,7 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    padding: 10px 40px;
+    padding: 10px 20px;
     display: block;
 }
 
@@ -51,15 +52,25 @@ nav ul li a:hover, .active {
 }
 
 main {
-    padding: 20px;
+    padding: 50px;
     max-width: 1000px;
-    margin: 100px auto 120px;
+    margin: 70px auto 10px;
 }
 
 h1 {
     text-align: center;
+    color:white ;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
     color: #003d33;
     font-weight: 700;
+}
+
+.room-details{
+    padding: 0px;
 }
 
 .room-details p {
@@ -67,6 +78,7 @@ h1 {
     line-height: 1.5;
     color: #555;
     text-align: center;
+   
 }
 
 table {
@@ -119,7 +131,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
