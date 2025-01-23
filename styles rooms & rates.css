@@ -4,14 +4,15 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #003d33;
-    color: white;
+    background: #003d33;
+    color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1rem 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -33,19 +34,20 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    display: block;
 }
 
-nav ul li a.active {
-    background: #f4a261;
-    color: #000;
+nav ul li a:hover, .active {
+    background: rgb(4, 145, 37);
+    color: white;
+    border-radius: 5px;
 }
 
 main {
@@ -54,7 +56,7 @@ main {
     margin: 80px auto 20px;
 }
 
-h2 {
+h1 {
     text-align: center;
     color: #003d33;
     font-weight: 700;

@@ -11,27 +11,47 @@ body {
 }
 
 header {
-    background-color: rgb(11, 82, 8);
-    color: white;
-    padding: 1.0rem;
+    background: #003d33;
+    color: #ffffff;
     text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 500;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
+    background-color: #005a47;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    color: white;
+    padding: 10px 20px;
+    display: block;
 }
+
+nav ul li a:hover, .active {
+    background: rgb(4, 145, 37);
+    color: white;
+    border-radius: 5px;
+}
+
 
 main section {
     padding: 2rem;
@@ -39,7 +59,7 @@ main section {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -56,9 +76,9 @@ li a{
 
 }
 .active{
-    background-color: rgb(34, 20, 200);
+    background-color:  rgb(4, 145, 37);
 }
 li a:hover{
-    background-color: black;
+    background-color:rgb(4, 145, 37);
 }
 

@@ -9,14 +9,19 @@ body {
 }
 
 header {
-    background-color: #003d33;
-    color: white;
-    padding: 10px 20px;
+    background: #003d33;
+    color: #ffffff;
     text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
+    font-weight: 500;
 }
 
 nav ul {
@@ -25,7 +30,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #444;
+    background-color: #005a47;
 }
 
 nav ul li {
@@ -33,17 +38,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: inline-block;
+    padding: 10px 20px;
+    display: block;
 }
 
-nav ul li a.active, 
-nav ul li a:hover {
-    background-color: #f4a261;
+nav ul li a:hover, .active {
+    background: rgb(4, 145, 37);
+    color: white;
     border-radius: 5px;
 }
+
 
 main {
     padding: 100px 20px 20px; /* Adjust for sticky header */
