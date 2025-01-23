@@ -3,7 +3,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f8f9fa;
+    background-image: url(image_01.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
 }
 
 header {
@@ -51,7 +55,19 @@ nav ul li a.active, nav ul li a:hover {
     text-align: center;
     padding: 5rem 1rem 3rem;
     background-color: #e8f5e9;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    position: absolute;
+    text-align: center;
+    bottom: 4vh;
+    left: 10vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 70vw;
+    height: 20vmin;
+    transition: 0.3s ease;
+
+}
+.hero p{
+    font-size: 1.5rem;
 }
 
 .hero h2 {
@@ -62,7 +78,7 @@ nav ul li a.active, nav ul li a:hover {
 
 .hero .cta-button {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 0.25rem;
     padding: 10px 20px;
     background-color: #003d33;
     color: #ffffff;
@@ -82,11 +98,12 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .full-image {
-    width: 100%;
+    width: 1490px;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     border-radius: 5px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-left: 0;
 }
 
 .full-image:hover {
@@ -109,11 +126,88 @@ nav ul li a.active, nav ul li a:hover {
 
 footer {
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem ;
     background-color: #003d33;
     color: #ffffff;
+    position: relative;
+    top: 120rem;
 }
 
+
+    
+
+.gallery #backward, .gallery #forward{
+    display: flex;
+    position: absolute;
+    top: 50vh;
+    font-size: 3vmin;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.gallery #backward{
+    left: 2vw;
+}
+.gallery #forward{
+    right: 2vw;
+}
+#backward:hover, #forward:hover{
+    font-size: 4vmin;
+    color: rgb(11, 184, 66);
+    transition: 0.3s ease;
+}
+
+
+.about{
+    position: absolute;
+    left: 0;
+    top: 110vh;
+    background-color: #129f3e;
+    width: 97vw;
+    height: 30vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    
+}
+
+.about h2{
+    text-align: center;
+}
+
+.about p{
+    font-size: 1.4vw;
+}
+
+.gallery{
+    position: absolute;
+    left: 0;
+    top: 160vh;
+    
+}
+
+.gallery2{
+    position: absolute;
+    left: 0;
+    top: 140vh;
+    background-color:rgb(12, 142, 31) ;
+    
+}
+
+.gallery2 h2{
+    text-align: center;
+}
+
+.gallery2 p{
+    text-align: justify;
+    font-size: 1.5rem;
+}
+.cta{
+    position: absolute;
+    left: 0;
+    top: 225vh;
+
+}
 
 
 @media screen and (max-width: 768px) {
@@ -129,3 +223,9 @@ footer {
         font-size: 2rem;
     }
 }
+
+
+
+
+
+
