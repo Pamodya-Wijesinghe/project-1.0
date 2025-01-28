@@ -8,9 +8,10 @@
         }
 
         /* Main image styling */
-        .main-image img {
-            width: 100%;
-            max-height: 500px;
+        .main-image {
+            
+            height: 100px;
+            width: 200px;
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
