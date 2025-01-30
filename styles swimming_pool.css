@@ -27,6 +27,7 @@
 .thumbnails-container {
     display: flex;
     align-items: center;
+    object-fit: cover; /*m*/
     width: 100%;
     max-width: 100vw;
     overflow-x: auto;
